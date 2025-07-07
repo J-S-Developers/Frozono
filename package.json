@@ -1,0 +1,19 @@
+{
+  "name": "frozono",
+  "version": "1.0.0",
+  "description": "Landing page para taller de reparacion de A/C y refrigerador.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/J-S-Developers/Frozono.git"
+  },
+  "author": "Jairo y Steven Desarrollos",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/J-S-Developers/Frozono/issues"
+  },
+  "homepage": "https://github.com/J-S-Developers/Frozono#readme"
+}
