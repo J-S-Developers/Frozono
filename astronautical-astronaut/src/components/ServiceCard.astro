@@ -1,0 +1,74 @@
+---
+interface Props{
+    icon: string;
+    tittle: string;
+    description: string;
+    features: string[];
+}
+
+const { icon, tittle, description, features }: Props = Astro.props;
+
+---
+
+
+<!--<article class="rounded-lg text-card-foreground group dark:hover:shadow-xl hover:shadow-2xl transition-all duration-300 border-0 shadow-lg hover:-translate-y-2 dark:bg-white bg-gray-800">-->
+<article>
+<div class = "flex flex-col space-y-1.5 p-6 text-center pb-4">
+        <div class="w-16 h-16 bg-gradient-to-br from-cyan-500 to-blue-600 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-snowflake h-8 w-8 text-white">
+                <line x1="2" x2="22" y1="12" y2="12"></line>
+                <line x1="12" x2="12" y1="2" y2="22"></line>
+                <path d="m20 16-4-4 4-4"></path>
+                <path d="m4 8 4 4-4 4"></path>
+                <path d="m16 4-4 4-4-4"></path>
+                <path d="m8 20 4-4 4 4"></path>
+            </svg>
+        </div>
+        <div class="tracking-tight text-xl font-bold dark:text-gray-900 text-white">Aires Acondicionados</div>
+    </div>
+    <div class="p-6 pt-0">
+        <div class="text-sm text-gray-300 text-center mb-4">
+        <!--{description}-->
+        Reparación y mantenimiento de sistemas de aire acondicionado residenciales y comerciales
+        </div>
+        <ul class="space-y-2 text-sm text-gray-600">
+        <!--{features.map((feature) => 
+            <li class="flex items-center">
+             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big h-4 w-4 text-green-500 mr-2">
+                <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                <path d="m9 11 3 3L22 4"></path>
+             </svg>
+             <span class="text-gray-600 dark:text-gray-300">{feature}</span>
+          </li>
+          )} --> 
+          <li class="flex items-center">
+           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big h-4 w-4 text-green-500 mr-2">
+              <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+              <path d="m9 11 3 3L22 4"></path>
+           </svg>
+           <span class="text-gray-300">Reparación de compresores</span>
+        </li>
+          <li class="flex items-center">
+           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big h-4 w-4 text-green-500 mr-2">
+              <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+              <path d="m9 11 3 3L22 4"></path>
+           </svg>
+           <span class="text-gray-300">Reparación de compresores</span>
+        </li>       
+         <li class="flex items-center">
+           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big h-4 w-4 text-green-500 mr-2">
+              <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+              <path d="m9 11 3 3L22 4"></path>
+           </svg>
+           <span class="text-gray-300">Reparación de compresores</span>
+        </li>      
+          <li class="flex items-center">
+           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big h-4 w-4 text-green-500 mr-2">
+              <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+              <path d="m9 11 3 3L22 4"></path>
+           </svg>
+           <span class="text-gray-300">Reparación de compresores</span>
+        </li>
+    </div>
+    </ul>
+</article>

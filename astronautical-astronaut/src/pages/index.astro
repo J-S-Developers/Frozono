@@ -2,9 +2,11 @@
 import { ClientRouter } from "astro:transitions";
 import Layout from "../layouts/Layout.astro";
 import Hero from "../components/Hero.astro";
+import ServiceCard from "../components/ServiceCard.astro";
+import ServiceLayout from "../layouts/ServiceLayout.astro";
 
 
-const title = "Astronautical Astronaut";
+const title = "CoolFix";
 const description = "A simple Astro project to demonstrate the basics of Astro.";
 ---
 <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
@@ -18,5 +20,13 @@ const description = "A simple Astro project to demonstrate the basics of Astro."
 <Layout>
     <Hero/>
 </Layout>
+
+<ServiceLayout>
+    <ServiceCard/>
+    <ServiceCard/>
+    <ServiceCard/>
+</ServiceLayout>
+
+
 
 <ClientRouter />
